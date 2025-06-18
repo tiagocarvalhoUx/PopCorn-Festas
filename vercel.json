@@ -12,10 +12,7 @@
       "source": "/images/(.*)",
       "destination": "/images/$1"
     },
-    {
-      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "destination": "/$1"
-    },
+    
     {
       "source": "/(.*)",
       "destination": "/"
