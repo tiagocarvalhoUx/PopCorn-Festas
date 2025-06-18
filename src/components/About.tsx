@@ -14,7 +14,7 @@ const About: React.FC<AboutProps> = () => {
             <div className="hero-content">
               <div className="image-container">
                 <img
-                  src="./public/assets/fotos/foto-circus.png"
+                  src="./public/fotos/foto-circus.png"
                   alt="carrinho com máquinas de bichinho"
                   className="hero-image"
                 />

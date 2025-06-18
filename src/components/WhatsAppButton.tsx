@@ -10,7 +10,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="./public/assets/fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
+      <img src="./public/fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
     </a>
   );
 };

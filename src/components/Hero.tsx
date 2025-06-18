@@ -7,7 +7,7 @@ const Hero: React.FC<HeroProps> = () => {
     <>
       <div id="bg-home">
         <video playsinline loop autoPlay muted>
-          <source src="./public/assets/videos/video-disney.mp4" />
+          <source src="./public/videos/video-disney.mp4" />
         </video>
       </div>
 
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = () => {
           <div className="hero-content">
             <div className="hero-image-container">
               <img
-                src="./public/assets/fotos/foto-carrinho-de-pipoca.png"
+                src="./public/fotos/foto-carrinho-de-pipoca.png"
                 alt="carrinho de pipoca"
                 className="hero-image"
               />
