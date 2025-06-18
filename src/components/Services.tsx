@@ -24,7 +24,7 @@ const Services: React.FC<ServicesProps> = () => {
           
           <div className="video-container">
             <video 
-              src="./public/videos/Video -Og.mp4" 
+              src="./public/videos/video-og.mp4" 
               controls 
               className="services-video"
               preload="metadata"

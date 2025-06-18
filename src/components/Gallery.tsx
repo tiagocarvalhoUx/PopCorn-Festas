@@ -23,7 +23,7 @@ const Gallery: React.FC = () => {
       caption: "Bubble House",
     },
     {
-      src: "./public/fotos/Galeria/foto-pipocaMickey.png",
+      src: "./public/fotos/Galeria/foto-pipocamickey.png",
       alt: "Embalagem Personalizada",
       caption: "Embalagem Personalizada",
     },
@@ -43,7 +43,7 @@ const Gallery: React.FC = () => {
       caption: "Máquina de Sorvete",
     },
     {
-      src: "./public/fotos/Galeria/Carrinho-pipoca-mine.png",
+      src: "./public/fotos/Galeria/carrinhopipoca-mine.png",
       alt: "Carrinho Móvel",
       caption: "Carrinho Móvel",
     },
