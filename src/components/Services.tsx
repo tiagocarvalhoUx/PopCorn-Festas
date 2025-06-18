@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface ServicesProps {}
+interface servicesProps {}
 
-const Services: React.FC<ServicesProps> = () => {
+const services: React.FC<ServicesProps> = () => {
   return (
     <section className="services-section" id="nossos-servicos">
       <div className="services-content">
@@ -145,4 +145,4 @@ const Services: React.FC<ServicesProps> = () => {
   );
 };
 
-export default Services;
+export default services;

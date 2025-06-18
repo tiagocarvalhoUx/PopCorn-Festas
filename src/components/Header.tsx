@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = () => {
+const header: React.FC<headerProps> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -369,4 +369,4 @@ const Header: React.FC<HeaderProps> = () => {
   );
 };
 
-export default Header;
+export default header;

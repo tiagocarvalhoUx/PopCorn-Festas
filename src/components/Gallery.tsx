@@ -7,7 +7,7 @@ interface GalleryItem {
   caption: string;
 }
 
-const Gallery: React.FC = () => {
+const gallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -676,4 +676,4 @@ const Gallery: React.FC = () => {
   );
 };
 
-export default Gallery;
+export default gallery;

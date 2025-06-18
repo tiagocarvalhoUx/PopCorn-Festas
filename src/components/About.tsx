@@ -2,7 +2,7 @@ import React from "react";
 
 interface AboutProps {}
 
-const About: React.FC<AboutProps> = () => {
+const about: React.FC<aboutProps> = () => {
   return (
     <section className="about-container">
       <div className="about-content">
@@ -273,4 +273,4 @@ const About: React.FC<AboutProps> = () => {
   );
 };
 
-export default About;
+export default about;

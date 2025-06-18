@@ -1,11 +1,7 @@
-// vite.config.js
-import { defineConfig} from 'vite';
-
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [
-    
-     // Adicione o plugin Vite do Tailwind CSS
-    // ... outros plugins
-  ],
-});
+  plugins: [react()],
+  base: '/meu-app/', // Se você tem um subdiretório no deploy
+})

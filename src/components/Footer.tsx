@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface FooterProps {}
+interface ooterProps {}
 
-const Footer: React.FC<FooterProps> = () => {
+const footer: React.FC<footerProps> = () => {
   return (
     <footer className="footer">
       <div className="footer-icons">
@@ -44,5 +44,5 @@ const Footer: React.FC<FooterProps> = () => {
   );
 };
 
-export default Footer;
+export default footer;
 

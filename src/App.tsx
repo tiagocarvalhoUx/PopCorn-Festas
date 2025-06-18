@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import Header from './components/header';
+import Hero from './components/hero';
+import About from './components/about';
+import Services from './components/services';
+import Gallery from './components/gallery';
+import Footer from './components/footer';
+import WhatsAppButton from './components/whatsappbutton';
 import './App.css';
 
 const App: React.FC = () => {

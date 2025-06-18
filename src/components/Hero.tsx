@@ -2,7 +2,7 @@ import React from "react";
 
 interface HeroProps {}
 
-const Hero: React.FC<HeroProps> = () => {
+const hero: React.FC<HeroProps> = () => {
   return (
     <>
       <div id="bg-home">
@@ -405,4 +405,4 @@ const Hero: React.FC<HeroProps> = () => {
   );
 };
 
-export default Hero;
+export default hero;
