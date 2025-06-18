@@ -5,7 +5,7 @@ const GalleryItem = {
   src: "string",
   alt: "string",
   caption: "string",
-}
+};
 
 const gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,42 +13,42 @@ const gallery = () => {
 
   const galleryItems = [
     {
-      src: "../public/fotos/Galeria/foto-patata.png",
+      src: "../fotos/Galeria/foto-patata.png",
       alt: "Festas Temáticas",
       caption: "Festas Temáticas",
     },
     {
-      src: "../public/fotos/Galeria/foto-bolha.png",
+      src: "../fotos/Galeria/foto-bolha.png",
       alt: "Bubble House",
       caption: "Bubble House",
     },
     {
-      src: "../public/fotos/Galeria/foto-pipocamickey.png",
+      src: "../fotos/Galeria/foto-pipocaMickey.png",
       alt: "Embalagem Personalizada",
       caption: "Embalagem Personalizada",
     },
     {
-      src: "../public/fotos/Galeria/foto-palhaçoalto.png",
+      src: "../fotos/Galeria/foto-palhaçoalto.png",
       alt: "Tema Circus",
       caption: "Tema Circus",
     },
     {
-      src: "../public/fotos/Galeria/maquina-de-bichinho-led.png",
+      src: "../fotos/Galeria/maquina-de-bichinho-led.png",
       alt: "Máquinas de Bichinho",
       caption: "Máquinas de Bichinho",
     },
     {
-      src: "../public/fotos/Galeria/sorvete2.png",
+      src: "../fotos/Galeria/sorvete2.png",
       alt: "Máquina de Sorvete",
       caption: "Máquina de Sorvete",
     },
     {
-      src: "../public/fotos/Galeria/carrinhopipoca-mine.png",
+      src: "../fotos/Galeria/carrinhopipoca-mine.png",
       alt: "Carrinho Móvel",
       caption: "Carrinho Móvel",
     },
     {
-      src: "../public/fotos/Galeria/tempero-maça-doce.png",
+      src: "../fotos/Galeria/tempero-maça-doce.png",
       alt: "Variedades de Temperos",
       caption: "Variedades de Temperos",
     },
@@ -145,7 +145,7 @@ const gallery = () => {
     image: {
       width: "100%",
       height: "100%",
-      objectFit: "cover" ,
+      objectFit: "cover",
       transition: "all 0.7s ease-out",
       filter: "brightness(0.9) contrast(1.1) saturate(1.2)",
       transform: "scale(1)",

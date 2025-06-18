@@ -23,7 +23,7 @@ const services = () => {
           
           <div className="video-container">
             <video 
-              src="../public/videos/video-og.mp4" 
+              src="../videos/video-og.mp4" 
               controls 
               className="services-video"
               preload="metadata"

@@ -7,7 +7,7 @@ const hero = () => {
     <>
       <div id="bg-home">
         <video playsinline loop autoPlay muted>
-          <source src="../public/videos/video-disney.mp4" />
+          <source src="../videos/video-disney.mp4" />
         </video>
       </div>
 
@@ -35,7 +35,7 @@ const hero = () => {
           <div className="hero-content">
             <div className="hero-image-container">
               <img
-                src="../public/fotos/foto-carrinho-de-pipoca.png"
+                src="../fotos/foto-carrinho-de-pipoca.png"
                 alt="carrinho de pipoca"
                 className="hero-image"
               />

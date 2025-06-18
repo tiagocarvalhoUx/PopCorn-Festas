@@ -271,7 +271,7 @@ const Header = () => {
           {/* Logo */}
           <div className="header-logo">
             <img 
-              src="../public/fotos/popcorn-festas-logo.png" 
+              src="../fotos/popcorn-festas-logo.png" 
               alt="PopCorn Festas Logo"
             />
           </div>

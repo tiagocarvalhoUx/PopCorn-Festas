@@ -9,7 +9,7 @@ const whatsappbutton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="../public/fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
+      <img src="../fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
     </a>
   );
 };

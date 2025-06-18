@@ -33,7 +33,7 @@ const footer = () => {
       <div>
         <img 
           className="logo"
-          src="../public/fotos/popcorn-festas-logo.png" 
+          src="../fotos/popcorn-festas-logo.png" 
           alt="logo-the-original"
         />
       </div>

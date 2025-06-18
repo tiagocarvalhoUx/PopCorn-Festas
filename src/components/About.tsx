@@ -14,7 +14,7 @@ const about = () => {
             <div className="hero-content">
               <div className="image-container">
                 <img
-                  src="../public/fotos/foto-circus.png"
+                  src="../fotos/foto-circus.png"
                   alt="carrinho com máquinas de bichinho"
                   className="hero-image"
                 />
