@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/header';
-import Hero from './components/hero';
-import About from './components/about';
-import Services from './components/services';
-import Gallery from './components/gallery';
-import Footer from './components/footer';
-import WhatsAppButton from './components/whatsappbutton';
+import Header from './components/header.tsx';
+import Hero from './components/hero.tsx';
+import About from './components/about.tsx';
+import Services from './components/services.tsx';
+import Gallery from './components/gallery.tsx';
+import Footer from './components/footer.tsx';
+import WhatsAppButton from './components/whatsappbutton.tsx';
 import './App.css';
 
 const App = () => {
@@ -23,4 +23,3 @@ const App = () => {
 };
 
 export default App;
-

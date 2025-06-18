@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
+var footer = function () {
+    return ((0, jsx_runtime_1.jsxs)("footer", { className: "footer", children: [(0, jsx_runtime_1.jsxs)("div", { className: "footer-icons", children: [(0, jsx_runtime_1.jsx)("a", { href: "https://www.instagram.com/theoriginalpopcorn/", target: "_blank", rel: "noopener noreferrer", children: (0, jsx_runtime_1.jsx)("i", { className: "fa-brands fa-instagram fa-2x" }) }), (0, jsx_runtime_1.jsx)("a", { href: "https://api.whatsapp.com/send?phone=5518991162170&fbclid=PAZXh0bgNhZW0CMTEAAaY0O7hu82GOFDet5PSotsr4zKLGsJ9AuoB-dCI40nYWGex58iUuiFjVFCw_aem_h0LLlP5qhBf-KgBz1f_ROg", target: "_blank", rel: "noopener noreferrer", children: (0, jsx_runtime_1.jsx)("i", { className: "fa-brands fab fab fab fa-whatsapp fa-2x" }) }), (0, jsx_runtime_1.jsx)("a", { href: "https://www.youtube.com/@PopcornFestas-d4y/shorts", target: "_blank", rel: "noopener noreferrer", children: (0, jsx_runtime_1.jsx)("i", { className: "fa-brands fab fab fab fab fa-youtube fa-2x" }) })] }), (0, jsx_runtime_1.jsx)("div", { children: (0, jsx_runtime_1.jsx)("img", { className: "logo", src: "../public/fotos/popcorn-festas-logo.png", alt: "logo-the-original" }) }), (0, jsx_runtime_1.jsx)("h10", { children: "Copyright 2024 | PopCorn FESTAS - Todos direitos reservados." })] }));
+};
+exports.default = footer;
