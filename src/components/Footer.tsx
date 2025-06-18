@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = () => {
       <div>
         <img 
           className="logo"
-          src="./src/assets/fotos/Popcorn Festas logo.png" 
+          src="./public/assets/fotos/Popcorn Festas logo.png" 
           alt="logo-the-original"
         />
       </div>

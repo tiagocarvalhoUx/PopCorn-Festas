@@ -13,42 +13,42 @@ const Gallery: React.FC = () => {
 
   const galleryItems: GalleryItem[] = [
     {
-      src: "./src/assets/fotos/Galeria/foto-patata.png",
+      src: "./public/assets/fotos/Galeria/foto-patata.png",
       alt: "Festas Temáticas",
       caption: "Festas Temáticas",
     },
     {
-      src: "./src/assets/fotos/Galeria/foto-bolha.png",
+      src: "./public/assets/fotos/Galeria/foto-bolha.png",
       alt: "Bubble House",
       caption: "Bubble House",
     },
     {
-      src: "./src/assets/fotos/Galeria/foto-pipocaMickey.png",
+      src: "./public/assets/fotos/Galeria/foto-pipocaMickey.png",
       alt: "Embalagem Personalizada",
       caption: "Embalagem Personalizada",
     },
     {
-      src: "./src/assets/fotos/Galeria/foto-palhaçoalto.png",
+      src: "./public/assets/fotos/Galeria/foto-palhaçoalto.png",
       alt: "Tema Circus",
       caption: "Tema Circus",
     },
     {
-      src: "./src/assets/fotos/Galeria/maquina-de-bichinho-led.png",
+      src: "./public/assets/fotos/Galeria/maquina-de-bichinho-led.png",
       alt: "Máquinas de Bichinho",
       caption: "Máquinas de Bichinho",
     },
     {
-      src: "./src/assets/fotos/Galeria/sorvete2.png",
+      src: "./public/assets/fotos/Galeria/sorvete2.png",
       alt: "Máquina de Sorvete",
       caption: "Máquina de Sorvete",
     },
     {
-      src: "./src/assets/fotos/Galeria/Carrinho-pipoca-mine.png",
+      src: "./public/assets/fotos/Galeria/Carrinho-pipoca-mine.png",
       alt: "Carrinho Móvel",
       caption: "Carrinho Móvel",
     },
     {
-      src: "./src/assets/fotos/Galeria/tempero-maça-doce.png",
+      src: "./public/assets/fotos/Galeria/tempero-maça-doce.png",
       alt: "Variedades de Temperos",
       caption: "Variedades de Temperos",
     },

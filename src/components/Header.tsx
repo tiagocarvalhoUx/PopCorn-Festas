@@ -271,7 +271,7 @@ const Header: React.FC<HeaderProps> = () => {
           {/* Logo */}
           <div className="header-logo">
             <img 
-              src="./src/assets/fotos/Popcorn Festas logo.png" 
+              src="./public/assets/fotos/Popcorn Festas logo.png" 
               alt="PopCorn Festas Logo"
             />
           </div>
