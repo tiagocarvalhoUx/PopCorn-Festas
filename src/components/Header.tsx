@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 
 
-const header = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -369,4 +369,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
