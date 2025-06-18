@@ -368,9 +368,9 @@ const Hero: React.FC<HeroProps> = () => {
           .hero-image-container {
             margin-top: -150%;
           }
-             .hero-description{
-               margin-top: -80%;
-             }
+          .hero-description {
+            margin-top: -80%;
+          }
 
           .hero-title {
             font-size: 2.8rem;

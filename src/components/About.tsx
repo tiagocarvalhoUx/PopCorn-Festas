@@ -88,7 +88,7 @@ const About: React.FC<AboutProps> = () => {
 
         .hero-content {
           max-width: 800px;
-          
+
           margin-right: 50px;
           width: 100%;
           background: transparent;
@@ -111,11 +111,10 @@ const About: React.FC<AboutProps> = () => {
           min-width: 300px;
           display: flex;
           justify-content: center;
-         margin-top: 80px;
+          margin-top: 80px;
         }
 
         .hero-image {
-           
           width: 100%;
           max-width: 400px;
           height: auto;
@@ -246,7 +245,7 @@ const About: React.FC<AboutProps> = () => {
         @media (max-width: 480px) {
           .hero-content {
             padding: 1rem;
-             margin: auto;
+            margin: auto;
           }
           .about-container {
             margin: auto;

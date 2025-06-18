@@ -73,7 +73,7 @@ const Gallery: React.FC = () => {
   // Auto-play functionality
   useEffect(() => {
     if (!isPlaying) return;
-    
+
     const interval = setInterval(() => {
       goToNext();
     }, 4000);
@@ -83,353 +83,364 @@ const Gallery: React.FC = () => {
 
   const styles = {
     section: {
-      width: '100%',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column' as const,
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '48px 16px',
-      background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.2), rgba(0, 0, 0, 0), rgba(30, 41, 59, 0.2))'
+      width: "100%",
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column" as const,
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "48px 16px",
+      background:
+        "linear-gradient(135deg, rgba(15, 23, 42, 0.2), rgba(0, 0, 0, 0), rgba(30, 41, 59, 0.2))",
     },
     header: {
-      textAlign: 'center' as const,
-      marginBottom: '64px'
+      textAlign: "center" as const,
+      marginBottom: "64px",
     },
     title: {
-      fontSize: 'clamp(3rem, 8vw, 4rem)',
-      fontWeight: 'bold',
-      color: 'white',
-      marginBottom: '24px',
-      textShadow: '0 25px 50px rgba(0, 0, 0, 0.25), 0 10px 25px rgba(0, 0, 0, 0.3)'
+      fontSize: "clamp(3rem, 8vw, 4rem)",
+      fontWeight: "bold",
+      color: "white",
+      marginBottom: "24px",
+      textShadow:
+        "0 25px 50px rgba(0, 0, 0, 0.25), 0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     subtitle: {
-      fontSize: 'clamp(1.25rem, 4vw, 1.5rem)',
-      color: 'rgba(255, 255, 255, 0.9)',
-      fontWeight: '300',
-      letterSpacing: '0.05em',
-      maxWidth: '512px',
-      margin: '0 auto',
-      textShadow: '0 10px 25px rgba(0, 0, 0, 0.3)'
+      fontSize: "clamp(1.25rem, 4vw, 1.5rem)",
+      color: "rgba(255, 255, 255, 0.9)",
+      fontWeight: "300",
+      letterSpacing: "0.05em",
+      maxWidth: "512px",
+      margin: "0 auto",
+      textShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     divider: {
-      width: '128px',
-      height: '4px',
-      background: 'linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)',
-      margin: '32px auto 0',
-      borderRadius: '9999px',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)'
+      width: "128px",
+      height: "4px",
+      background: "linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)",
+      margin: "32px auto 0",
+      borderRadius: "9999px",
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     carouselContainer: {
-      position: 'relative' as const,
-      maxWidth: '1152px',
-      width: '100%'
+      position: "relative" as const,
+      maxWidth: "1152px",
+      width: "100%",
     },
     carousel: {
-      position: 'relative' as const,
-      overflow: 'hidden',
-      borderRadius: '24px',
-      boxShadow: '0 25px 50px rgba(0, 0, 0, 0.25)',
-      background: 'rgba(255, 255, 255, 0.05)',
-      backdropFilter: 'blur(16px)',
-      border: '1px solid rgba(255, 255, 255, 0.1)'
+      position: "relative" as const,
+      overflow: "hidden",
+      borderRadius: "24px",
+      boxShadow: "0 25px 50px rgba(0, 0, 0, 0.25)",
+      background: "rgba(255, 255, 255, 0.05)",
+      backdropFilter: "blur(16px)",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
     },
     imageContainer: {
-      position: 'relative' as const,
-      width: '100%',
-      height: '320px',
-      overflow: 'hidden'
+      position: "relative" as const,
+      width: "100%",
+      height: "320px",
+      overflow: "hidden",
     },
     image: {
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover' as const,
-      transition: 'all 0.7s ease-out',
-      filter: 'brightness(0.9) contrast(1.1) saturate(1.2)',
-      transform: 'scale(1)'
+      width: "100%",
+      height: "100%",
+      objectFit: "cover" as const,
+      transition: "all 0.7s ease-out",
+      filter: "brightness(0.9) contrast(1.1) saturate(1.2)",
+      transform: "scale(1)",
     },
     imageHover: {
-      transform: 'scale(1.05)'
+      transform: "scale(1.05)",
     },
     gradientOverlay1: {
-      position: 'absolute' as const,
-      inset: '0',
-      background: 'linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), transparent)'
+      position: "absolute" as const,
+      inset: "0",
+      background:
+        "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), transparent)",
     },
     gradientOverlay2: {
-      position: 'absolute' as const,
-      inset: '0',
-      background: 'linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent, rgba(0, 0, 0, 0.3))'
+      position: "absolute" as const,
+      inset: "0",
+      background:
+        "linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent, rgba(0, 0, 0, 0.3))",
     },
     caption: {
-      position: 'absolute' as const,
-      bottom: '0',
-      left: '0',
-      right: '0',
-      padding: '24px'
+      position: "absolute" as const,
+      bottom: "0",
+      left: "0",
+      right: "0",
+      padding: "24px",
     },
     captionTitle: {
-      color: 'white',
-      fontSize: 'clamp(1.5rem, 4vw, 2rem)',
-      fontWeight: 'bold',
-      textShadow: '0 25px 50px rgba(0, 0, 0, 0.25)',
-      marginBottom: '12px',
-      letterSpacing: '0.025em'
+      color: "white",
+      fontSize: "clamp(1.5rem, 4vw, 2rem)",
+      fontWeight: "bold",
+      textShadow: "0 25px 50px rgba(0, 0, 0, 0.25)",
+      marginBottom: "12px",
+      letterSpacing: "0.025em",
     },
     captionDivider: {
-      width: '80px',
-      height: '4px',
-      background: 'linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)',
-      borderRadius: '9999px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+      width: "80px",
+      height: "4px",
+      background: "linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)",
+      borderRadius: "9999px",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
     },
     navButton: {
-      position: 'absolute' as const,
-      top: '50%',
-      transform: 'translateY(-50%)',
-      background: 'rgba(255, 255, 255, 0.1)',
-      backdropFilter: 'blur(24px)',
-      color: 'white',
-      padding: '12px',
-      borderRadius: '50%',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-      boxShadow: '0 25px 50px rgba(0, 0, 0, 0.25)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
+      position: "absolute" as const,
+      top: "50%",
+      transform: "translateY(-50%)",
+      background: "rgba(255, 255, 255, 0.1)",
+      backdropFilter: "blur(24px)",
+      color: "white",
+      padding: "12px",
+      borderRadius: "50%",
+      border: "1px solid rgba(255, 255, 255, 0.2)",
+      cursor: "pointer",
+      transition: "all 0.3s ease",
+      boxShadow: "0 25px 50px rgba(0, 0, 0, 0.25)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
     },
     navButtonLeft: {
-      left: '16px'
+      left: "16px",
     },
     navButtonRight: {
-      right: '16px'
+      right: "16px",
     },
     navButtonHover: {
-      background: 'rgba(255, 255, 255, 0.2)',
-      transform: 'translateY(-50%) scale(1.1)',
-      borderColor: 'rgba(255, 255, 255, 0.4)'
+      background: "rgba(255, 255, 255, 0.2)",
+      transform: "translateY(-50%) scale(1.1)",
+      borderColor: "rgba(255, 255, 255, 0.4)",
     },
     playButton: {
-      position: 'absolute' as const,
-      top: '16px',
-      right: '16px',
-      background: 'rgba(255, 255, 255, 0.1)',
-      backdropFilter: 'blur(24px)',
-      color: 'white',
-      padding: '8px',
-      borderRadius: '50%',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
+      position: "absolute" as const,
+      top: "16px",
+      right: "16px",
+      background: "rgba(255, 255, 255, 0.1)",
+      backdropFilter: "blur(24px)",
+      color: "white",
+      padding: "8px",
+      borderRadius: "50%",
+      border: "1px solid rgba(255, 255, 255, 0.2)",
+      cursor: "pointer",
+      transition: "all 0.3s ease",
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
     },
     playButtonHover: {
-      background: 'rgba(255, 255, 255, 0.2)',
-      transform: 'scale(1.1)'
+      background: "rgba(255, 255, 255, 0.2)",
+      transform: "scale(1.1)",
     },
     dotsContainer: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '12px',
-      marginTop: '32px'
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "12px",
+      marginTop: "32px",
     },
     dot: {
-      width: '12px',
-      height: '12px',
-      borderRadius: '50%',
-      background: 'rgba(255, 255, 255, 0.4)',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-      border: 'none'
+      width: "12px",
+      height: "12px",
+      borderRadius: "50%",
+      background: "rgba(255, 255, 255, 0.4)",
+      cursor: "pointer",
+      transition: "all 0.3s ease",
+      border: "none",
     },
     dotActive: {
-      width: '48px',
-      height: '12px',
-      background: 'white',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
-      transform: 'scale(1.1)'
+      width: "48px",
+      height: "12px",
+      background: "white",
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+      transform: "scale(1.1)",
     },
     dotHover: {
-      background: 'rgba(255, 255, 255, 0.7)',
-      transform: 'scale(1.1)'
+      background: "rgba(255, 255, 255, 0.7)",
+      transform: "scale(1.1)",
     },
     thumbnailsContainer: {
-      display: 'none',
-      justifyContent: 'center',
-      gap: '16px',
-      marginTop: '40px',
-      overflowX: 'auto' as const,
-      paddingBottom: '8px',
-      padding: '0 16px'
+      display: "none",
+      justifyContent: "center",
+      gap: "16px",
+      marginTop: "40px",
+      overflowX: "auto" as const,
+      paddingBottom: "8px",
+      padding: "0 16px",
     },
     thumbnail: {
       flexShrink: 0,
-      position: 'relative' as const,
-      overflow: 'hidden',
-      borderRadius: '12px',
-      transition: 'all 0.3s ease',
-      cursor: 'pointer'
+      position: "relative" as const,
+      overflow: "hidden",
+      borderRadius: "12px",
+      transition: "all 0.3s ease",
+      cursor: "pointer",
     },
     thumbnailActive: {
-      boxShadow: '0 0 0 4px rgba(255, 255, 255, 0.6), 0 25px 50px rgba(0, 0, 0, 0.25)',
-      transform: 'scale(1.1)'
+      boxShadow:
+        "0 0 0 4px rgba(255, 255, 255, 0.6), 0 25px 50px rgba(0, 0, 0, 0.25)",
+      transform: "scale(1.1)",
     },
     thumbnailInactive: {
-      opacity: '0.5',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)'
+      opacity: "0.5",
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     thumbnailHover: {
-      opacity: '0.8',
-      transform: 'scale(1.05)'
+      opacity: "0.8",
+      transform: "scale(1.05)",
     },
     thumbnailImage: {
-      width: '96px',
-      height: '96px',
-      objectFit: 'cover' as const,
-      transition: 'all 0.3s ease'
+      width: "96px",
+      height: "96px",
+      objectFit: "cover" as const,
+      transition: "all 0.3s ease",
     },
     thumbnailOverlay: {
-      position: 'absolute' as const,
-      inset: '0',
-      transition: 'all 0.3s ease'
+      position: "absolute" as const,
+      inset: "0",
+      transition: "all 0.3s ease",
     },
     thumbnailOverlayActive: {
-      background: 'rgba(0, 0, 0, 0.1)'
+      background: "rgba(0, 0, 0, 0.1)",
     },
     thumbnailOverlayInactive: {
-      background: 'rgba(0, 0, 0, 0.4)'
+      background: "rgba(0, 0, 0, 0.4)",
     },
     thumbnailLabel: {
-      position: 'absolute' as const,
-      bottom: '0',
-      left: '0',
-      right: '0',
-      background: 'linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent)',
-      padding: '8px'
+      position: "absolute" as const,
+      bottom: "0",
+      left: "0",
+      right: "0",
+      background: "linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent)",
+      padding: "8px",
     },
     thumbnailLabelText: {
-      color: 'white',
-      fontSize: '12px',
-      fontWeight: '500',
-      whiteSpace: 'nowrap' as const,
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      display: 'block'
+      color: "white",
+      fontSize: "12px",
+      fontWeight: "500",
+      whiteSpace: "nowrap" as const,
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      display: "block",
     },
     progressBarContainer: {
-      marginTop: '32px',
-      width: '100%',
-      background: 'rgba(255, 255, 255, 0.1)',
-      borderRadius: '9999px',
-      height: '8px',
-      backdropFilter: 'blur(4px)',
-      border: '1px solid rgba(255, 255, 255, 0.1)'
+      marginTop: "32px",
+      width: "100%",
+      background: "rgba(255, 255, 255, 0.1)",
+      borderRadius: "9999px",
+      height: "8px",
+      backdropFilter: "blur(4px)",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
     },
     progressBar: {
-      background: 'linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)',
-      height: '8px',
-      borderRadius: '9999px',
-      transition: 'all 0.7s ease',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)'
+      background: "linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)",
+      height: "8px",
+      borderRadius: "9999px",
+      transition: "all 0.7s ease",
+      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     infoContainer: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginTop: '24px'
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginTop: "24px",
     },
     infoText: {
-      color: 'rgba(255, 255, 255, 0.7)',
-      fontSize: '14px',
-      fontWeight: '500'
+      color: "rgba(255, 255, 255, 0.7)",
+      fontSize: "14px",
+      fontWeight: "500",
     },
     hintsText: {
-      marginTop: '24px',
-      textAlign: 'center' as const,
-      color: 'rgba(255, 255, 255, 0.5)',
-      fontSize: '12px'
+      marginTop: "24px",
+      textAlign: "center" as const,
+      color: "rgba(255, 255, 255, 0.5)",
+      fontSize: "12px",
     },
     // Media queries through inline styles
-    '@media (min-width: 768px)': {
+    "@media (min-width: 768px)": {
       imageContainer: {
-        height: '384px'
+        height: "384px",
       },
       navButton: {
-        padding: '16px'
+        padding: "16px",
       },
       navButtonLeft: {
-        left: '24px'
+        left: "24px",
       },
       navButtonRight: {
-        right: '24px'
+        right: "24px",
       },
       playButton: {
-        padding: '12px'
+        padding: "12px",
       },
       caption: {
-        padding: '32px'
+        padding: "32px",
       },
       hintsText: {
-        fontSize: '14px'
-      }
+        fontSize: "14px",
+      },
     },
-    '@media (min-width: 1024px)': {
+    "@media (min-width: 1024px)": {
       imageContainer: {
-        height: '500px'
+        height: "500px",
       },
       thumbnailsContainer: {
-        display: 'flex'
+        display: "flex",
       },
       caption: {
-        padding: '40px'
-      }
+        padding: "40px",
+      },
     },
-    '@media (min-width: 1280px)': {
+    "@media (min-width: 1280px)": {
       imageContainer: {
-        height: '600px'
-      }
-    }
+        height: "600px",
+      },
+    },
   };
 
   // Responsive styles based on screen size
   const getResponsiveStyles = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const width = window.innerWidth;
-      
+
       if (width >= 1280) {
         return {
-          imageContainer: { ...styles.imageContainer, height: '600px' },
-          thumbnailsContainer: { ...styles.thumbnailsContainer, display: 'flex' },
-          caption: { ...styles.caption, padding: '40px' }
+          imageContainer: { ...styles.imageContainer, height: "600px" },
+          thumbnailsContainer: {
+            ...styles.thumbnailsContainer,
+            display: "flex",
+          },
+          caption: { ...styles.caption, padding: "40px" },
         };
       } else if (width >= 1024) {
         return {
-          imageContainer: { ...styles.imageContainer, height: '500px' },
-          thumbnailsContainer: { ...styles.thumbnailsContainer, display: 'flex' },
-          caption: { ...styles.caption, padding: '40px' }
+          imageContainer: { ...styles.imageContainer, height: "500px" },
+          thumbnailsContainer: {
+            ...styles.thumbnailsContainer,
+            display: "flex",
+          },
+          caption: { ...styles.caption, padding: "40px" },
         };
       } else if (width >= 768) {
         return {
-          imageContainer: { ...styles.imageContainer, height: '384px' },
-          navButton: { ...styles.navButton, padding: '16px' },
-          playButton: { ...styles.playButton, padding: '12px' },
-          caption: { ...styles.caption, padding: '32px' }
+          imageContainer: { ...styles.imageContainer, height: "384px" },
+          navButton: { ...styles.navButton, padding: "16px" },
+          playButton: { ...styles.playButton, padding: "12px" },
+          caption: { ...styles.caption, padding: "32px" },
         };
       }
     }
-    
+
     return {
       imageContainer: styles.imageContainer,
       thumbnailsContainer: styles.thumbnailsContainer,
       caption: styles.caption,
       navButton: styles.navButton,
-      playButton: styles.playButton
+      playButton: styles.playButton,
     };
   };
 
@@ -439,12 +450,8 @@ const Gallery: React.FC = () => {
     <section id="Galeria" style={styles.section}>
       {/* Header */}
       <div style={styles.header}>
-        <h2 style={styles.title}>
-          Galeria
-        </h2>
-        <p style={styles.subtitle}>
-          Confira Algumas de Nossas Melhores Fotos!
-        </p>
+        <h2 style={styles.title}>Galeria</h2>
+        <p style={styles.subtitle}>Confira Algumas de Nossas Melhores Fotos!</p>
         <div style={styles.divider}></div>
       </div>
 
@@ -454,19 +461,26 @@ const Gallery: React.FC = () => {
         <div style={styles.carousel}>
           <div style={responsiveStyles.imageContainer}>
             {/* Current Image */}
-            <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            >
               <img
                 src={galleryItems[currentIndex].src}
                 alt={galleryItems[currentIndex].alt}
                 style={styles.image}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.05)';
+                  e.currentTarget.style.transform = "scale(1.05)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
               />
-              
+
               {/* Gradient Overlays */}
               <div style={styles.gradientOverlay1}></div>
               <div style={styles.gradientOverlay2}></div>
@@ -486,7 +500,7 @@ const Gallery: React.FC = () => {
               style={{
                 ...styles.navButton,
                 ...styles.navButtonLeft,
-                ...responsiveStyles.navButton
+                ...responsiveStyles.navButton,
               }}
               onMouseEnter={(e) => {
                 Object.assign(e.currentTarget.style, styles.navButtonHover);
@@ -495,7 +509,7 @@ const Gallery: React.FC = () => {
                 Object.assign(e.currentTarget.style, {
                   ...styles.navButton,
                   ...styles.navButtonLeft,
-                  ...responsiveStyles.navButton
+                  ...responsiveStyles.navButton,
                 });
               }}
               aria-label="Foto anterior"
@@ -508,7 +522,7 @@ const Gallery: React.FC = () => {
               style={{
                 ...styles.navButton,
                 ...styles.navButtonRight,
-                ...responsiveStyles.navButton
+                ...responsiveStyles.navButton,
               }}
               onMouseEnter={(e) => {
                 Object.assign(e.currentTarget.style, styles.navButtonHover);
@@ -517,7 +531,7 @@ const Gallery: React.FC = () => {
                 Object.assign(e.currentTarget.style, {
                   ...styles.navButton,
                   ...styles.navButtonRight,
-                  ...responsiveStyles.navButton
+                  ...responsiveStyles.navButton,
                 });
               }}
               aria-label="Próxima foto"
@@ -530,7 +544,7 @@ const Gallery: React.FC = () => {
               onClick={toggleAutoPlay}
               style={{
                 ...styles.playButton,
-                ...responsiveStyles.playButton
+                ...responsiveStyles.playButton,
               }}
               onMouseEnter={(e) => {
                 Object.assign(e.currentTarget.style, styles.playButtonHover);
@@ -538,10 +552,12 @@ const Gallery: React.FC = () => {
               onMouseLeave={(e) => {
                 Object.assign(e.currentTarget.style, {
                   ...styles.playButton,
-                  ...responsiveStyles.playButton
+                  ...responsiveStyles.playButton,
                 });
               }}
-              aria-label={isPlaying ? "Pausar apresentação" : "Iniciar apresentação"}
+              aria-label={
+                isPlaying ? "Pausar apresentação" : "Iniciar apresentação"
+              }
             >
               {isPlaying ? <Pause size={20} /> : <Play size={20} />}
             </button>
@@ -554,7 +570,11 @@ const Gallery: React.FC = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              style={index === currentIndex ? { ...styles.dot, ...styles.dotActive } : styles.dot}
+              style={
+                index === currentIndex
+                  ? { ...styles.dot, ...styles.dotActive }
+                  : styles.dot
+              }
               onMouseEnter={(e) => {
                 if (index !== currentIndex) {
                   Object.assign(e.currentTarget.style, styles.dotHover);
@@ -578,21 +598,25 @@ const Gallery: React.FC = () => {
               onClick={() => setCurrentIndex(index)}
               style={{
                 ...styles.thumbnail,
-                ...(index === currentIndex ? styles.thumbnailActive : styles.thumbnailInactive)
+                ...(index === currentIndex
+                  ? styles.thumbnailActive
+                  : styles.thumbnailInactive),
               }}
               onMouseEnter={(e) => {
                 if (index !== currentIndex) {
                   Object.assign(e.currentTarget.style, {
                     ...styles.thumbnail,
                     ...styles.thumbnailInactive,
-                    ...styles.thumbnailHover
+                    ...styles.thumbnailHover,
                   });
                 }
               }}
               onMouseLeave={(e) => {
                 Object.assign(e.currentTarget.style, {
                   ...styles.thumbnail,
-                  ...(index === currentIndex ? styles.thumbnailActive : styles.thumbnailInactive)
+                  ...(index === currentIndex
+                    ? styles.thumbnailActive
+                    : styles.thumbnailInactive),
                 });
               }}
             >
@@ -601,16 +625,23 @@ const Gallery: React.FC = () => {
                 alt={item.alt}
                 style={styles.thumbnailImage}
               />
-              <div style={index === currentIndex ? 
-                { ...styles.thumbnailOverlay, ...styles.thumbnailOverlayActive } : 
-                { ...styles.thumbnailOverlay, ...styles.thumbnailOverlayInactive }
-              }></div>
-              
+              <div
+                style={
+                  index === currentIndex
+                    ? {
+                        ...styles.thumbnailOverlay,
+                        ...styles.thumbnailOverlayActive,
+                      }
+                    : {
+                        ...styles.thumbnailOverlay,
+                        ...styles.thumbnailOverlayInactive,
+                      }
+                }
+              ></div>
+
               {/* Thumbnail Label */}
               <div style={styles.thumbnailLabel}>
-                <span style={styles.thumbnailLabelText}>
-                  {item.caption}
-                </span>
+                <span style={styles.thumbnailLabelText}>{item.caption}</span>
               </div>
             </button>
           ))}
@@ -621,7 +652,7 @@ const Gallery: React.FC = () => {
           <div
             style={{
               ...styles.progressBar,
-              width: `${((currentIndex + 1) / galleryItems.length) * 100}%`
+              width: `${((currentIndex + 1) / galleryItems.length) * 100}%`,
             }}
           ></div>
         </div>
@@ -638,9 +669,7 @@ const Gallery: React.FC = () => {
 
         {/* Navigation Hints */}
         <div style={styles.hintsText}>
-          <p>
-            Use as setas do teclado ou clique nas miniaturas para navegar
-          </p>
+          <p>Use as setas do teclado ou clique nas miniaturas para navegar</p>
         </div>
       </div>
     </section>

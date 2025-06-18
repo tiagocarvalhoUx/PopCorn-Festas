@@ -18,7 +18,7 @@
   .mobile-only {
     display: block;
   }
-  
+
   .desktop-only {
     display: none !important;
   }
@@ -49,8 +49,6 @@ header.rolagem li {
 header.rolagem i {
   color: red;
 }
-
-
 
 /* Menu hambúrguer */
 .menu-toggle {
@@ -258,13 +256,13 @@ body.menu-open {
     justify-content: flex-end;
     padding: 0 20px;
   }
-  
+
   /* Menu hambúrguer posicionado à direita */
   .menu-toggle {
     order: 1;
     margin-left: auto;
   }
-  
+
   /* Menu lateral para mobile */
   .header-links {
     position: fixed;
@@ -282,11 +280,11 @@ body.menu-open {
     z-index: 1000;
     overflow-y: auto;
   }
-  
+
   .header-links.mobile-active {
     right: 0;
   }
-  
+
   .header-links a {
     display: block;
     padding: 20px;
@@ -294,15 +292,15 @@ body.menu-open {
     text-align: center;
     font-size: 18px;
   }
-  
+
   .header-links li {
     margin: 0;
   }
-  
+
   .header-links li::after {
     display: none;
   }
-  
+
   /* Ajustar hambúrguer quando menu está aberto */
   .hamburger.active span {
     background-color: #ffffff;
@@ -327,7 +325,7 @@ body.menu-open {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #bg-home::after {
@@ -336,11 +334,9 @@ body.menu-open {
   height: inherit;
   position: fixed;
   inset: 0;
-  background: linear-gradient(109deg, 10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%;
+  background: linear-gradient(109deg, 10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%;
 }
-
-
-
 
 .text {
   font: icon;
@@ -361,7 +357,7 @@ body.menu-open {
   height: 100%;
   margin-right: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 8px solid #fefbff;
   box-shadow: 5px 5px 5px #353436;
   flex-grow: 2;
@@ -371,7 +367,7 @@ body.menu-open {
 .button-contact {
   padding: 14px 28px;
   color: white;
-  background-color: #D94140;
+  background-color: #d94140;
   border-radius: 30px;
   font-size: 25px;
   font: bolder;
@@ -529,7 +525,7 @@ h2 {
   height: 100%;
   margin-right: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 8px solid #fefbff;
   box-shadow: 5px 5px 5px #353436;
   flex-grow: 2;
@@ -731,7 +727,7 @@ h9 {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.2s linear;
 }
 
@@ -771,7 +767,7 @@ h9 {
   border: 5px solid #edeaef;
   border-radius: 5px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .popup-imag h12 {
@@ -921,4 +917,3 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-
