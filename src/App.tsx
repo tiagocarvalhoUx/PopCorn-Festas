@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/header.tsx';
-import Hero from './components/hero.tsx';
-import About from './components/about.tsx';
-import Services from './components/services.tsx';
-import Gallery from './components/gallery.tsx';
-import Footer from './components/footer.tsx';
-import WhatsAppButton from './components/whatsappbutton.tsx';
+import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
+import About from './components/About.jsx';
+import Services from './components/Services.jsx';
+import Gallery from './components/Gallery.jsx';
+import Footer from './components/Footer.jsx';
+import WhatsAppButton from './components/WhatsAppButton.jsx';
 import './App.css';
 
 const App = () => {
