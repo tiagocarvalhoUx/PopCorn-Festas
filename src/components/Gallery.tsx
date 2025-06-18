@@ -1,54 +1,54 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 
-interface GalleryItem {
-  src: string;
-  alt: string;
-  caption: string;
+const GalleryItem = {
+  src: "string",
+  alt: "string",
+  caption: "string",
 }
 
-const gallery: React.FC = () => {
+const gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
-  const galleryItems: GalleryItem[] = [
+  const galleryItems = [
     {
-      src: "./public/fotos/Galeria/foto-patata.png",
+      src: "../public/fotos/Galeria/foto-patata.png",
       alt: "Festas Temáticas",
       caption: "Festas Temáticas",
     },
     {
-      src: "./public/fotos/Galeria/foto-bolha.png",
+      src: "../public/fotos/Galeria/foto-bolha.png",
       alt: "Bubble House",
       caption: "Bubble House",
     },
     {
-      src: "./public/fotos/Galeria/foto-pipocamickey.png",
+      src: "../public/fotos/Galeria/foto-pipocamickey.png",
       alt: "Embalagem Personalizada",
       caption: "Embalagem Personalizada",
     },
     {
-      src: "./public/fotos/Galeria/foto-palhaçoalto.png",
+      src: "../public/fotos/Galeria/foto-palhaçoalto.png",
       alt: "Tema Circus",
       caption: "Tema Circus",
     },
     {
-      src: "./public/fotos/Galeria/maquina-de-bichinho-led.png",
+      src: "../public/fotos/Galeria/maquina-de-bichinho-led.png",
       alt: "Máquinas de Bichinho",
       caption: "Máquinas de Bichinho",
     },
     {
-      src: "./public/fotos/Galeria/sorvete2.png",
+      src: "../public/fotos/Galeria/sorvete2.png",
       alt: "Máquina de Sorvete",
       caption: "Máquina de Sorvete",
     },
     {
-      src: "./public/fotos/Galeria/carrinhopipoca-mine.png",
+      src: "../public/fotos/Galeria/carrinhopipoca-mine.png",
       alt: "Carrinho Móvel",
       caption: "Carrinho Móvel",
     },
     {
-      src: "./public/fotos/Galeria/tempero-maça-doce.png",
+      src: "../public/fotos/Galeria/tempero-maça-doce.png",
       alt: "Variedades de Temperos",
       caption: "Variedades de Temperos",
     },
@@ -86,7 +86,7 @@ const gallery: React.FC = () => {
       width: "100%",
       minHeight: "100vh",
       display: "flex",
-      flexDirection: "column" as const,
+      flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       padding: "48px 16px",
@@ -94,7 +94,7 @@ const gallery: React.FC = () => {
         "linear-gradient(135deg, rgba(15, 23, 42, 0.2), rgba(0, 0, 0, 0), rgba(30, 41, 59, 0.2))",
     },
     header: {
-      textAlign: "center" as const,
+      textAlign: "center",
       marginBottom: "64px",
     },
     title: {
@@ -123,12 +123,12 @@ const gallery: React.FC = () => {
       boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
     },
     carouselContainer: {
-      position: "relative" as const,
+      position: "relative",
       maxWidth: "1152px",
       width: "100%",
     },
     carousel: {
-      position: "relative" as const,
+      position: "relative",
       overflow: "hidden",
       borderRadius: "24px",
       boxShadow: "0 25px 50px rgba(0, 0, 0, 0.25)",
@@ -137,7 +137,7 @@ const gallery: React.FC = () => {
       border: "1px solid rgba(255, 255, 255, 0.1)",
     },
     imageContainer: {
-      position: "relative" as const,
+      position: "relative",
       width: "100%",
       height: "320px",
       overflow: "hidden",
@@ -145,7 +145,7 @@ const gallery: React.FC = () => {
     image: {
       width: "100%",
       height: "100%",
-      objectFit: "cover" as const,
+      objectFit: "cover" ,
       transition: "all 0.7s ease-out",
       filter: "brightness(0.9) contrast(1.1) saturate(1.2)",
       transform: "scale(1)",
@@ -154,19 +154,19 @@ const gallery: React.FC = () => {
       transform: "scale(1.05)",
     },
     gradientOverlay1: {
-      position: "absolute" as const,
+      position: "absolute",
       inset: "0",
       background:
         "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), transparent)",
     },
     gradientOverlay2: {
-      position: "absolute" as const,
+      position: "absolute",
       inset: "0",
       background:
         "linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent, rgba(0, 0, 0, 0.3))",
     },
     caption: {
-      position: "absolute" as const,
+      position: "absolute",
       bottom: "0",
       left: "0",
       right: "0",
@@ -188,7 +188,7 @@ const gallery: React.FC = () => {
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
     },
     navButton: {
-      position: "absolute" as const,
+      position: "absolute",
       top: "50%",
       transform: "translateY(-50%)",
       background: "rgba(255, 255, 255, 0.1)",
@@ -216,7 +216,7 @@ const gallery: React.FC = () => {
       borderColor: "rgba(255, 255, 255, 0.4)",
     },
     playButton: {
-      position: "absolute" as const,
+      position: "absolute",
       top: "16px",
       right: "16px",
       background: "rgba(255, 255, 255, 0.1)",
@@ -268,13 +268,13 @@ const gallery: React.FC = () => {
       justifyContent: "center",
       gap: "16px",
       marginTop: "40px",
-      overflowX: "auto" as const,
+      overflowX: "auto",
       paddingBottom: "8px",
       padding: "0 16px",
     },
     thumbnail: {
       flexShrink: 0,
-      position: "relative" as const,
+      position: "relative",
       overflow: "hidden",
       borderRadius: "12px",
       transition: "all 0.3s ease",
@@ -296,11 +296,11 @@ const gallery: React.FC = () => {
     thumbnailImage: {
       width: "96px",
       height: "96px",
-      objectFit: "cover" as const,
+      objectFit: "cover",
       transition: "all 0.3s ease",
     },
     thumbnailOverlay: {
-      position: "absolute" as const,
+      position: "absolute",
       inset: "0",
       transition: "all 0.3s ease",
     },
@@ -311,7 +311,7 @@ const gallery: React.FC = () => {
       background: "rgba(0, 0, 0, 0.4)",
     },
     thumbnailLabel: {
-      position: "absolute" as const,
+      position: "absolute",
       bottom: "0",
       left: "0",
       right: "0",
@@ -322,7 +322,7 @@ const gallery: React.FC = () => {
       color: "white",
       fontSize: "12px",
       fontWeight: "500",
-      whiteSpace: "nowrap" as const,
+      whiteSpace: "nowrap",
       overflow: "hidden",
       textOverflow: "ellipsis",
       display: "block",
@@ -356,7 +356,7 @@ const gallery: React.FC = () => {
     },
     hintsText: {
       marginTop: "24px",
-      textAlign: "center" as const,
+      textAlign: "center",
       color: "rgba(255, 255, 255, 0.5)",
       fontSize: "12px",
     },

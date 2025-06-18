@@ -1,8 +1,7 @@
 import React from 'react';
 
-interface servicesProps {}
 
-const services: React.FC<ServicesProps> = () => {
+const services = () => {
   return (
     <section className="services-section" id="nossos-servicos">
       <div className="services-content">
@@ -24,7 +23,7 @@ const services: React.FC<ServicesProps> = () => {
           
           <div className="video-container">
             <video 
-              src="./public/videos/video-og.mp4" 
+              src="../public/videos/video-og.mp4" 
               controls 
               className="services-video"
               preload="metadata"

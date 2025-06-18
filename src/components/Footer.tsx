@@ -1,8 +1,7 @@
 import React from 'react';
 
-interface ooterProps {}
 
-const footer: React.FC<footerProps> = () => {
+const footer = () => {
   return (
     <footer className="footer">
       <div className="footer-icons">
@@ -34,7 +33,7 @@ const footer: React.FC<footerProps> = () => {
       <div>
         <img 
           className="logo"
-          src="./public/fotos/popcorn festas logo.png" 
+          src="../public/fotos/popcorn-festas-logo.png" 
           alt="logo-the-original"
         />
       </div>

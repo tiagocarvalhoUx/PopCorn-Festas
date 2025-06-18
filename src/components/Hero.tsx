@@ -1,13 +1,13 @@
 import React from "react";
 
-interface HeroProps {}
 
-const hero: React.FC<HeroProps> = () => {
+
+const hero = () => {
   return (
     <>
       <div id="bg-home">
         <video playsinline loop autoPlay muted>
-          <source src="./public/videos/video-disney.mp4" />
+          <source src="../public/videos/video-disney.mp4" />
         </video>
       </div>
 
@@ -35,7 +35,7 @@ const hero: React.FC<HeroProps> = () => {
           <div className="hero-content">
             <div className="hero-image-container">
               <img
-                src="./public/fotos/foto-carrinho-de-pipoca.png"
+                src="../public/fotos/foto-carrinho-de-pipoca.png"
                 alt="carrinho de pipoca"
                 className="hero-image"
               />

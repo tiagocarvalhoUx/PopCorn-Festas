@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-interface HeaderProps {}
 
-const header: React.FC<headerProps> = () => {
+
+const header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -271,7 +271,7 @@ const header: React.FC<headerProps> = () => {
           {/* Logo */}
           <div className="header-logo">
             <img 
-              src="./public/fotos/popcorn festas logo.png" 
+              src="../public/fotos/popcorn-festas-logo.png" 
               alt="PopCorn Festas Logo"
             />
           </div>

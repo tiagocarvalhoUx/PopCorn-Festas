@@ -1,8 +1,8 @@
 import React from "react";
 
-interface AboutProps {}
 
-const about: React.FC<aboutProps> = () => {
+
+const about = () => {
   return (
     <section className="about-container">
       <div className="about-content">
@@ -14,7 +14,7 @@ const about: React.FC<aboutProps> = () => {
             <div className="hero-content">
               <div className="image-container">
                 <img
-                  src="./public/fotos/foto-circus.png"
+                  src="../public/fotos/foto-circus.png"
                   alt="carrinho com máquinas de bichinho"
                   className="hero-image"
                 />

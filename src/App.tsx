@@ -8,7 +8,7 @@ import Footer from './components/footer';
 import WhatsAppButton from './components/whatsappbutton';
 import './App.css';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="App">
       <Header />

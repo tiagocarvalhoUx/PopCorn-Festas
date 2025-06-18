@@ -1,8 +1,7 @@
 import React from 'react';
 
-interface WhatsAppButtonProps {}
 
-const whatsappbutton: React.FC<WhatsAppButtonProps> = () => {
+const whatsappbutton = () => {
   return (
     <a 
       href="https://api.whatsapp.com/send?phone=5518991162170&fbclid=PAZXh0bgNhZW0CMTEAAaY0O7hu82GOFDet5PSotsr4zKLGsJ9AuoB-dCI40nYWGex58iUuiFjVFCw_aem_h0LLlP5qhBf-KgBz1f_ROg"
@@ -10,7 +9,7 @@ const whatsappbutton: React.FC<WhatsAppButtonProps> = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="./public/fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
+      <img src="../public/fotos/Galeria/whatssapp.svg" alt="botao whatsapp" />
     </a>
   );
 };
