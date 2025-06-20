@@ -12,45 +12,95 @@ const gallery = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   const galleryItems = [
+  
+    // Galeria Popcorn
     {
-      src: "../fotos/Galeria/foto-patata.png",
-      alt: "Festas Temáticas",
-      caption: "Festas Temáticas",
+      src: "/Galeria-Popcorn/mesa-hockey.png",
+      alt: "Mesa Hockey",
+      caption: "Mesa Hockey",
     },
     {
-      src: "../fotos/Galeria/foto-bolha.png",
+      src: "/Galeria-Popcorn/bolha-inflavel.png",
       alt: "Bubble House",
       caption: "Bubble House",
     },
     {
-      src: "../fotos/Galeria/foto-pipocaMickey.png",
+      src: "/Galeria-Popcorn/carrinho-algodao-doce.png",
+      alt: "Carrinho Algodão Doce",
+      caption: "Carrinho Algodão Doce",
+    },
+    {
+      src: "/Galeria-Popcorn/carrinho-crepe.png",
+      alt: "Carrinho Crepe",
+      caption: "Carrinho Crepe",
+    },
+    {
+      src: "/Galeria-Popcorn/carrinho-hotdog.png",
+      alt: "Carrinho Hotdog",
+      caption: "Carrinho Hotdog",
+    },
+    {
+      src: "/Galeria-Popcorn/carrinho-pipoca-pelucia.png",
+      alt: "Carrinho Pipoca Pelúcia",
+      caption: "Carrinhos Móveis",
+    },
+    {
+      src: "/Galeria-Popcorn/crepe.png",
+      alt: "Carrinho Crepe",
+      caption: "Carrinho Crepe",
+     
+    },
+    {
+      src: "/Galeria-Popcorn/embalagem-pipoca.png",
       alt: "Embalagem Personalizada",
       caption: "Embalagem Personalizada",
+     
     },
     {
-      src: "../fotos/Galeria/foto-palhaçoalto.png",
+      src: "/Galeria-Popcorn/ilha-algodao-doce.png",
+      alt: "Ilha Algodão Doce",
+      caption: "Ilha Algodão Doce",
+    },
+    {
+      src: "/Galeria-Popcorn/ilha-sorvete-algodao-doce.png",
+      alt: "Ilha Sorvete Algodão Doce",
+      caption: "Ilha Sorvete",
+    },
+    {
+      src: "/Galeria-Popcorn/maquina-de-bichinho-led.png",
+      alt: "Máquina Bichinho",
+      caption: "Máquina Bichinho",
+    },
+    {
+      src: "/Galeria-Popcorn/maquina-sorvete.png",
+      alt: "Máquina Sorvete",
+      caption: "Máquina Sorvete",
+    },
+    {
+      src: "/Galeria-Popcorn/palhaçoalto.png",
       alt: "Tema Circus",
       caption: "Tema Circus",
+     
     },
     {
-      src: "../fotos/Galeria/maquina-de-bichinho-led.png",
-      alt: "Máquinas de Bichinho",
-      caption: "Máquinas de Bichinho",
+      src: "/Galeria-Popcorn/patata.png",
+      alt: "Festas Temáticas",
+      caption: "Festas Temáticas",
     },
     {
-      src: "../fotos/Galeria/sorvete2.png",
-      alt: "Máquina de Sorvete",
-      caption: "Máquina de Sorvete",
-    },
-    {
-      src: "../fotos/Galeria/carrinhopipoca-mine.png",
-      alt: "Carrinho Móvel",
-      caption: "Carrinho Móvel",
-    },
-    {
-      src: "../fotos/Galeria/tempero-maça-doce.png",
+      src: "/Galeria-Popcorn/temperos-pipoca.png",
       alt: "Variedades de Temperos",
-      caption: "Variedades de Temperos",
+      caption: "Variedades Temperos",
+    },
+    {
+      src: "/Galeria-Popcorn/touro-mecanico.png",
+      alt: "Touro Mecânico",
+      caption: "Touro Mecânico",
+    },
+    {
+      src: "/Galeria-Popcorn/escorregador-inflavel.png",
+      alt: "Escorregador Inflável",
+      caption: "Escorregador Inflável",
     },
   ];
 
