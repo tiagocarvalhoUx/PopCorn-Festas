@@ -6,7 +6,7 @@ const footer = () => {
     <footer className="footer">
       <div className="footer-icons">
         <a 
-          href="https://www.instagram.com/theoriginalpopcorn/" 
+          href="https://www.instagram.com/popcornefestas/" 
           target="_blank" 
           rel="noopener noreferrer"
         >

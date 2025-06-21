@@ -148,9 +148,10 @@ const gallery = () => {
       marginBottom: "64px",
     },
     title: {
-      fontSize: "clamp(3rem, 8vw, 4rem)",
+      fontSize: "40px",
       fontWeight: "bold",
       color: "white",
+      margintop: "-80px",
       marginBottom: "24px",
       textShadow:
         "0 25px 50px rgba(0, 0, 0, 0.25), 0 10px 25px rgba(0, 0, 0, 0.3)",
@@ -175,7 +176,7 @@ const gallery = () => {
     carouselContainer: {
       position: "relative",
       maxWidth: "1152px",
-      width: "100%",
+      width: "80%",
     },
     carousel: {
       position: "relative",
@@ -411,6 +412,18 @@ const gallery = () => {
       fontSize: "12px",
     },
     // Media queries through inline styles
+  "@media (max-width: 480px)": {
+     carouselContainer: {
+      position: "relative",
+      maxWidth: "900vh",
+      width: "100%",
+    },
+    },
+    
+
+
+
+
     "@media (min-width: 768px)": {
       imageContainer: {
         height: "384px",

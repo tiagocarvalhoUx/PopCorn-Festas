@@ -290,7 +290,7 @@ const Header = () => {
 
           {/* Ícones Sociais Desktop */}
           <div className="header-icons">
-            <a href="https://www.instagram.com/theoriginalpopcorn/" 
+            <a href="https://www.instagram.com/popcornefestas/" 
                target="_blank" 
                rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
