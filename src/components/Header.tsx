@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
-
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,19 +10,19 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     // Previne scroll quando menu está aberto
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'auto';
+    document.body.style.overflow = !isMenuOpen ? "hidden" : "auto";
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -46,8 +44,10 @@ const Header = () => {
           left: 0;
           transition: all 0.5s ease;
           z-index: 1000;
-          background: ${isScrolled ? 'rgba(254, 251, 255, 0.95)' : 'transparent'};
-          backdrop-filter: ${isScrolled ? 'blur(10px)' : 'none'};
+          background: ${isScrolled
+            ? "rgba(254, 251, 255, 0.95)"
+            : "transparent"};
+          backdrop-filter: ${isScrolled ? "blur(10px)" : "none"};
         }
 
         .header-content {
@@ -75,7 +75,7 @@ const Header = () => {
         .header-links {
           display: flex;
           gap: 40px;
-          margin:auto;
+          margin: auto;
           list-style: none;
           font-size: 18px;
           font-weight: 600;
@@ -84,7 +84,7 @@ const Header = () => {
         }
 
         .header-links a {
-          color: ${isScrolled ? '#d34040' : '#ffffff'};
+          color: ${isScrolled ? "#d34040" : "#ffffff"};
           text-decoration: none;
           position: relative;
           transition: all 0.3s ease;
@@ -96,7 +96,7 @@ const Header = () => {
         }
 
         .header-links a::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
@@ -118,7 +118,7 @@ const Header = () => {
         }
 
         .header-icons a {
-          color: ${isScrolled ? '#d34040' : '#ffffff'};
+          color: ${isScrolled ? "#d34040" : "#ffffff"};
           font-size: 24px;
           transition: all 0.3s ease;
         }
@@ -144,7 +144,7 @@ const Header = () => {
         .hamburger-line {
           width: 25px;
           height: 3px;
-          background-color: ${isScrolled ? '#d34040' : '#ffffff'};
+          background-color: ${isScrolled ? "#d34040" : "#ffffff"};
           transition: all 0.3s ease;
           border-radius: 2px;
         }
@@ -167,7 +167,7 @@ const Header = () => {
         .mobile-menu {
           position: fixed;
           top: 0;
-          right: ${isMenuOpen ? '0' : '-100%'};
+          right: ${isMenuOpen ? "0" : "-100%"};
           width: 300px;
           height: 100vh;
           background: rgba(0, 0, 0, 0.95);
@@ -229,8 +229,8 @@ const Header = () => {
           height: 100%;
           background: rgba(0, 0, 0, 0.5);
           z-index: 999;
-          opacity: ${isMenuOpen ? '1' : '0'};
-          visibility: ${isMenuOpen ? 'visible' : 'hidden'};
+          opacity: ${isMenuOpen ? "1" : "0"};
+          visibility: ${isMenuOpen ? "visible" : "hidden"};
           transition: all 0.3s ease;
         }
 
@@ -270,8 +270,8 @@ const Header = () => {
         <div className="header-content">
           {/* Logo */}
           <div className="header-logo">
-            <img 
-              src="../fotos/popcorn-festas-logo.png" 
+            <img
+              src="../fotos/popcorn-festas-logo.png"
               alt="PopCorn Festas Logo"
             />
           </div>
@@ -281,35 +281,43 @@ const Header = () => {
             <a href="#">Home</a>
             <a href="#Galeria">Fotos</a>
             <a href="#nossos-servicos">Serviços</a>
-            <a href="https://api.whatsapp.com/send?phone=5518991162170" 
-               target="_blank" 
-               rel="noopener noreferrer">
+            <a
+              href="https://api.whatsapp.com/send?phone=5518991162170"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Contatos
             </a>
           </nav>
 
           {/* Ícones Sociais Desktop */}
           <div className="header-icons">
-            <a href="https://www.instagram.com/popcornefestas/" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
+            <a
+              href="https://www.instagram.com/popcornefestas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram fa-2x"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5518991162170" 
-               target="_blank" 
-               rel="noopener noreferrer">
+            <a
+              href="https://api.whatsapp.com/send?phone=5518991162170"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-whatsapp"></i>
             </a>
-            <a href="https://www.youtube.com/@PopcornFestas-d4y/shorts" 
-               target="_blank" 
-               rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/@PopcornFestas-d4y/shorts"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-youtube"></i>
             </a>
           </div>
 
           {/* Menu Hambúrguer */}
-          <button 
-            className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+          <button
+            className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -326,43 +334,57 @@ const Header = () => {
       {/* Menu Mobile */}
       <div className="mobile-menu">
         <nav className="mobile-menu-links">
-          <a href="#home" onClick={closeMenu}>Home</a>
-          <a href="#Galeria" onClick={closeMenu}>Fotos</a>
-          <a href="#nossos-servicos" onClick={closeMenu}>Serviços</a>
-          <a href="https://api.whatsapp.com/send?phone=5518991162170" 
-             target="_blank" 
-             rel="noopener noreferrer"
-             onClick={closeMenu}>
+          <a href="#home" onClick={closeMenu}>
+            Home
+          </a>
+          <a href="#Galeria" onClick={closeMenu}>
+            Fotos
+          </a>
+          <a href="#nossos-servicos" onClick={closeMenu}>
+            Serviços
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5518991162170"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
             Contatos
           </a>
         </nav>
 
         <div className="mobile-social-icons">
-          <a href="https://www.instagram.com/theoriginalpopcorn/" 
-             target="_blank" 
-             rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/popcornefestas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5518991162170" 
-             target="_blank" 
-             rel="noopener noreferrer">
+          <a
+            href="https://api.whatsapp.com/send?phone=5518991162170"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-whatsapp"></i>
           </a>
-          <a href="https://www.youtube.com/@PopcornFestas-d4y/shorts" 
-             target="_blank" 
-             rel="noopener noreferrer">
+          <a
+            href="https://www.youtube.com/@PopcornFestas-d4y/shorts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-youtube"></i>
           </a>
         </div>
       </div>
 
       {/* Font Awesome CDN */}
-      <link 
-        rel="stylesheet" 
+      <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       />
-      <link 
-        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" 
+      <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap"
         rel="stylesheet"
       />
     </>
